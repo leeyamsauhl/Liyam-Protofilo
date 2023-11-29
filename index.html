@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פרופיל עליי</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            transition: background-color 0.3s ease;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            text-align: right;
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .project {
+            margin-bottom: 2em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Mobile Styles */
+        @media only screen and (max-width: 600px) {
+            section {
+                padding: 1em;
+                margin: 1em;
+            }
+
+            header {
+                padding: 0.5em;
+            }
+
+            .project {
+                margin-bottom: 1em;
+            }
+
+            #settings-btn {
+                position: fixed;
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+
+        /* Settings button */
+        #settings-btn {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: fixed;
+            top: 10px;
+            left: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Settings button -->
+    <button id="settings-btn" onclick="toggleDarkMode()">MODE</button>
+
+    <header>
+        <p>איש עם עבר פלילי | היזהרו</p>
+    </header>
+
+    <section>
+        <h2>אודות עליי</h2>
+        <br>
+        <p>
+           <strong> 
+         אני שניצל שאוהב שניצל שמחבב שניצל שהוא ממש שניצל
+            <br>
+            שניצל בלי השניצל עם השניצל כי השניצל הוא קדוש
+            <br>
+            אבל השניצל הוא כה טעים שבטעות אכלתי
+            <br>
+            את כל התרנגול וזה הסיפור המדהים שלי
+           </strong>
+        </p>
+    </section>
+
+    <section>
+        <h2>הפרויקטים שלי</h2>
+
+        <div class="project">
+            <br>
+            <h3>פרויקט ראשון</h3>
+            <p>
+                בגינה קטנה בפתח תקווה הכנתי שניצל מאוד מאוד
+                טעים ועסיסי <br>
+                היה לי רעיון להכניס לתוך השניצל עגבנייה
+                <br>
+                ויצרתי את המאכל המוכר גיפלוקש
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>פרויקט שני</h3>
+            <p>
+               בעיירת לוד אני חשבתי על רעיון מטורף שזה
+               <br>
+               לבנות כיכר בשם כיכר הכדורים ולהכניס
+               <br>
+               בו את הכדורים שלי. הכיכר הזה מפורסם כיום
+            </p>
+        </div>
+    </section>
+
+    <!-- Third Section with Image -->
+    <section>
+        <h2>קטע חדש עם תמונה</h2>
+
+        <div>
+            <img src="OIP.jpg" alt="Description of the image">
+            <p>מייאו</p>
+        </div>
+    </section>
+
+    <footer>
+        <p style="text-align: center;"><strong>איש השניצל</strong></p>
+    </footer>
+
+    <script>
+        // Toggle dark mode
+        function toggleDarkMode() {
+            const body = document.body;
+            const section = document.querySelector('section');
+
+            body.classList.toggle('dark-mode');
+            section.classList.toggle('dark-mode');
+
+            const isDarkMode = body.classList.contains('dark-mode');
+            const newBackgroundColor = isDarkMode ? '#222' : '#f4f4f4';
+            body.style.backgroundColor = newBackgroundColor;
+            section.style.backgroundColor = newBackgroundColor;
+        }
+    </script>
+
+</body>
+</html>
