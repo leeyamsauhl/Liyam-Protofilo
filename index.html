@@ -52,7 +52,6 @@
             color: #fff;
         }
 
-        /* Mobile Styles */
         @media only screen and (max-width: 600px) {
             section {
                 padding: 1em;
@@ -81,7 +80,6 @@
             }
         }
 
-        /* Settings button */
         #settings-btn {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             position: fixed;
@@ -98,7 +96,6 @@
 </head>
 <body>
 
-    <!-- Settings button -->
     <button id="settings-btn" onclick="toggleDarkMode()">MODE</button>
 
     <header>
@@ -111,8 +108,7 @@
         <p>
            <strong> 
          אני שניצל שאוהב שניצל שמחבב שניצל שהוא ממש שניצל
-            <br>
-            שניצל בלי השניצל עם השניצל כי השניצל הוא קדוש
+            <br> בלי השניצל עם השניצל כי השניצל הוא קדוש
             <br>
             אבל השניצל הוא כה טעים שבטעות אכלתי
             <br>
@@ -148,12 +144,11 @@
         </div>
     </section>
 
-    <!-- Third Section with Image -->
     <section>
         <h2>קטע חדש עם תמונה</h2>
 
         <div>
-            <img src="OIP.jpg" alt="Description of the image">
+            <img src="OIP.jpg" alt="Angry Birds">
             <p>מייאו</p>
         </div>
     </section>
@@ -163,7 +158,6 @@
     </footer>
 
     <script>
-        // Toggle dark mode
         function toggleDarkMode() {
             const body = document.body;
             const section = document.querySelector('section');
